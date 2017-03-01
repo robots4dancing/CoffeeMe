@@ -12,6 +12,7 @@
 		819C1C311E664BC30022FF09 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 819C1C2F1E664BC30022FF09 /* Main.storyboard */; };
 		819C1C331E664BC30022FF09 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 819C1C321E664BC30022FF09 /* Assets.xcassets */; };
 		819C1C361E664BC30022FF09 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 819C1C341E664BC30022FF09 /* LaunchScreen.storyboard */; };
+		819C1C3F1E664C780022FF09 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 819C1C3E1E664C780022FF09 /* MapKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		819C1C321E664BC30022FF09 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		819C1C351E664BC30022FF09 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		819C1C371E664BC30022FF09 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		819C1C3E1E664C780022FF09 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +31,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				819C1C3F1E664C780022FF09 /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +43,7 @@
 			children = (
 				819C1C2A1E664BC30022FF09 /* CoffeeMe */,
 				819C1C291E664BC30022FF09 /* Products */,
+				819C1C3D1E664C780022FF09 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -62,6 +66,14 @@
 				819C1C371E664BC30022FF09 /* Info.plist */,
 			);
 			path = CoffeeMe;
+			sourceTree = "<group>";
+		};
+		819C1C3D1E664C780022FF09 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				819C1C3E1E664C780022FF09 /* MapKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -96,7 +108,13 @@
 				TargetAttributes = {
 					819C1C271E664BC30022FF09 = {
 						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 9N6M5Y8VH3;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Maps.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -260,7 +278,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 9N6M5Y8VH3;
 				INFOPLIST_FILE = CoffeeMe/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = wccnet.edu.sempie.CoffeeMe;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -272,7 +292,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 9N6M5Y8VH3;
 				INFOPLIST_FILE = CoffeeMe/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = wccnet.edu.sempie.CoffeeMe;
 				PRODUCT_NAME = "$(TARGET_NAME)";
